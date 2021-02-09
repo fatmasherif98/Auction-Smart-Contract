@@ -1,0 +1,10 @@
+Steps:
+
+1- Encrypt N Parts of The Recording using N prime numbers Enc(Image[i] || primes[i]) for i in range(N)
+2- Compute Large Number PC = PI(primes) and publish PC on the Network
+3- Send ZKproof that Enc(Image[i] || primes[i]) done correctly for all i and PI(primes) == PC
+4- Reveal m random primes so that participants check correctness
+5- Start auction and winner revealed
+6- Encrypt primes under winner public key
+7- Send ZKproof that primes are encrypted correctly under winner public key and that PI(primes) == PC
+8- If true transfere money to the manager
